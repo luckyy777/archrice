@@ -10,3 +10,5 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " groff stuff
 map <leader>c :w! \| !sh '/home/ollie/.local/bin/compiler.sh' "<c-r>%"<CR>
 map <leader>w :w! \| !bash '/home/ollie/.local/bin/wordcount.sh' <enter>
+
+colorscheme catppuccin
