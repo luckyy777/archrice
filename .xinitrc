@@ -8,6 +8,7 @@ killall mpd
 mpd &
 mpDris2 &
 sxhkd &
+picom &
 dwmblocks &
 xwallpaper --zoom $HOME/.config/pape.png
 
