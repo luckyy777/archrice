@@ -1,5 +1,5 @@
 clear
-~/.local/bin/cfetch
+sh ~/.local/bin/cfetch
 DISABLE_AUTO_TITLE="true"
 #autocomplete
 autoload -Uz compinit promptinit
@@ -50,7 +50,7 @@ alias sx='startx'
 alias pacman='pacman --color=always'
 alias btop='btop --utf-force'
 alias ls='ls --color=auto'
-alias c='clear'
+alias c='clear; sh ~/.local/bin/cfetch'
 
 function decrypt(){
 	filename="$(echo $1 | sed 's/.gpg//g')"
