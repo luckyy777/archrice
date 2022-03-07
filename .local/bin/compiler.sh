@@ -45,3 +45,4 @@ case "$ext" in
 esac
 
 echo -e "\n words: $(cat "$file" | wc -w)"
+echo -e "\n words without headings: $(cat "$file" | grep --invert-match '\\' | wc -w)"

@@ -4,13 +4,13 @@ output="$(playerctl --player=mpd metadata --format "{{ artist }} - {{ title }}")
 
 case "$status" in
 	Stopped)
-	output="  Not Playing"
+	output=" Not Playing"
 	;; 
 	Playing)
-	output="  ${output}"
+	output=" ${output}"
 	;;
 	Paused)
-	output="  ${output}" 
+	output=" ${output}" 
 	;;
 esac
 

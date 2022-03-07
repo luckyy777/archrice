@@ -21,4 +21,4 @@ if [ "$th" = "" ]; then
 	th="th"
 fi
 
-echo " $(date "+%a %e"$th" %b, %H:%M")"
+echo " $(date "+%a%e"$th" %b, %H:%M")"

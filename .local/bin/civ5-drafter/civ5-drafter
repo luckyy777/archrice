@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+import random
+import array
+
+def valid_input(output, lower, upper):
+    verified = False
+    while verified == False:
+        try:
+            print(output)
+            verified_int = int(input())
+            if verified_int < lower or verified_int > upper:
+                error()
+                continue
+            else:
+                verified = True
+        except:
+            error()
+    return verified_int
+
+def error():
+    print("Please enter a valid number")
+
+#def ban_civs(civs):
+    
+
+def pick_civs(players, civs_num, civs):
+    for i in range(players):
+        print("")
+        print ("Player", i+1)
+        temp_civs = civs
+        for j in range(civs_num):
+            n = random.randrange(0, len(temp_civs))
+            print(temp_civs[n])
+            temp_civs.pop(n)
+
+    print(" ")
+
+def main():
+    all_civs = ["American", "Arabian", "Assyrian", "Austrian", "Aztec", "Babylonian", "Brazilian", "Byzantine", "Carthaginian", "Celtic", "Chinese", "Danish", "Dutch", "Egyptian", "English", "Ethiopian", "French", "German", "Greek", "Hunnic", "Incan", "Indian", "Indonesian", "Iroquois", "Japanese", "Korean", "Mayan", "Mongolian", "Moroccan", "Ottoman", "Persian", "Polish", "Polynesian", "Portuguese", "Roman", "Russian", "Shoshone", "Siamese", "Songhai", "Spanish", "Swedish", "Venetian", "Zulu"]
+    player_count = valid_input("How many players are there? (1-12)", 1, 12)
+    civs_per_player = valid_input("How many civilisations should each player choose from? (1-3)", 1, 3)
+    #ban_civs()
+    pick_civs(player_count, civs_per_player, all_civs)
+
+main()
