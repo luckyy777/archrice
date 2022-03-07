@@ -9,6 +9,7 @@ mpd &
 mpDris2 &
 sxhkd &
 dwmblocks &
+xwallpaper --zoom $HOME/.config/pape.png
 
 xrandr --dpi 96
 
