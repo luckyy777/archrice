@@ -1,4 +1,5 @@
 clear
+~/.local/bin/cfetch
 DISABLE_AUTO_TITLE="true"
 #autocomplete
 autoload -Uz compinit promptinit
@@ -40,25 +41,16 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 fi                                                                                          
 
 #aliases
-function dwmrebuild(){
-	
-	currentdir="$PWD"
-	cd ~/.local/src/dwm/
-	sudo make clean install
-	cd $currentdir
-
-}
-
 alias dwmedit='nvim ~/.local/src/dwm/config.h'
 alias sudo='doas'
-alias cleanup='sudo pacman -Rs $(pacman -Qqdt)'
+alias cleanup='sudo pacman -Rs --noconfirm $(pacman -Qqdt)'
 alias yay='yay --color=always --sudo doas --sudoflags -- --save'
-alias update='yay -Syyu; protonup'
 alias ytdlmp3='youtube-dl -x --audio-format mp3 "$1"'
 alias sx='startx'
 alias pacman='pacman --color=always'
 alias btop='btop --utf-force'
 alias ls='ls --color=auto'
+alias c='clear'
 
 function decrypt(){
 	filename="$(echo $1 | sed 's/.gpg//g')"
@@ -67,6 +59,17 @@ function decrypt(){
 	fi
 	gpg -d $1 > decrypted/$filename
 	cd decrypted/
+}
+
+function dwmrebuild(){
+	currentdir="$PWD"
+	cd ~/.local/src/dwm/
+	sudo make clean install
+	cd $currentdir
+}
+
+function update(){
+	yay -Syyu
 }
 
 export PATH=$HOME"/platform-tools:$PATH"
