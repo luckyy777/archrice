@@ -8,7 +8,8 @@ killall mpd
 mpd &
 mpDris2 &
 sxhkd &
+dwmblocks &
 
 xrandr --dpi 96
 
-exec startxfce4
+exec dwm
