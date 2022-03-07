@@ -55,9 +55,9 @@ super + F4
 
 ### opening shit ###
 
-# kitty
+# alacritty
 super + Return
-	kitty
+	alacritty
 
 # file manager
 super + e
@@ -81,7 +81,7 @@ super + shift + g
 
 # ncmpcpp
 super + p
-	kitty -e ncmpcpp
+	alacritty -o "window.dimensions.columns=150" "window.dimensions.lines=50" -e ncmpcpp
 
 # teams
 super + shift + c

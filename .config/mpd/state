@@ -1,8 +1,9 @@
-sw_volume: 0
+sw_volume: 50
 audio_device_state:1:pulse audio
-state: stop
-current: 0
-random: 1
+state: pause
+current: 12
+time: 144.603000
+random: 0
 repeat: 0
 single: 0
 consume: 0
@@ -43,5 +44,4 @@ playlist_begin
 30:Twenty One Pilots - Vessel/Kitchen Sink.mp3
 31:Twenty One Pilots - Vessel/Lovely.mp3
 32:Twenty One Pilots - Vessel/Forest.mp3
-33:The Killers - Hot Fuss/02 Mr. Brightside.mp3
 playlist_end
