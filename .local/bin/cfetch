@@ -36,7 +36,7 @@ getUser() {
   HOST="${HOST:-${HOSTNAME:-$(hostname 2>/dev/null)}}"
 
   # Show hostname and active-user information. $USER > `id -nu`
-  printf "${c2}%s${c1}@${c2}%s" "${USER:-$(id -nu)}" "${HOST:-$(uname -n)}"
+  printf "${c4}%s${c5}@${c4}%s" "${USER:-$(id -nu)}" "${HOST:-$(uname -n)}"
 
 }
 
@@ -256,12 +256,12 @@ ${bg} \      /   ${rs}%s
 ${bg}  '____'    ${rs}%s
              %s      \n" \
 "$(getUser            )" \
-"$(getDistro       )" \
-"$(getKernel       )" \
-"$(getWM           )" \
-"$(getPackages     )" \
-"$(getUptime       )" \
-"$(getPalette    ''  )"
+"$(getDistro     'os      '  )" \
+"$(getKernel     'kernel  '  )" \
+"$(getWM         'desktop ' )" \
+"$(getPackages   'packages'  )" \
+"$(getUptime     'uptime  '  )" \
+""
 
 exit ${?}
 # vim:ft=sh:nowrap
