@@ -8,6 +8,7 @@ brightnessctl
 btop
 discord
 duf
+dunst
 efibootmgr
 fakeroot
 file
@@ -40,6 +41,7 @@ neofetch
 neovim
 networkmanager
 opendoas
+p7zip
 pacman
 pamixer
 patch
@@ -47,13 +49,12 @@ pavucontrol
 picom
 pkgconf
 playerctl
-protonup-git
 pulseaudio
+python-pip
 qbittorrent
 scrot
 sed
 steam
-sudo
 sxhkd
 texinfo
 texlive-bibtexextra
@@ -69,15 +70,18 @@ texlive-pstricks
 texlive-publishers
 texlive-science
 thunar
+treefetch-bin
 ttf-cascadia-code
 ttf-dejavu
 ttf-font-awesome
 ttf-liberation
 ttf-ms-fonts
 tumbler
+unzip
 which
 wireshark-qt
 xclip
+xf86-video-amdgpu
 xorg-server
 xorg-xinit
 xviewer
@@ -86,6 +90,7 @@ yay-git
 youtube-dl
 zathura
 zathura-pdf-mupdf
+zip
 zsh
 zsh-autosuggestions
 zsh-completions
