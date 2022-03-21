@@ -20,21 +20,6 @@ alt + Print
 super + shift + s
 	scrot --select --freeze -e 'xclip -selection clipboard -t image/png -i $f' ~/.cache/screenshots/screenshot.png
 
-### volume controls ###
-
-# increase volume
-XF86AudioRaiseVolume
-	pamixer -i 5; pkill -RTMIN+10 dwmblocks
-
-# decrease volume
-XF86AudioLowerVolume
-	pamixer -d 5; pkill -RTMIN+10 dwmblocks
-
-# mute volume 
-XF86AudioMute
-	pamixer -t; pkill -RTMIN+10 dwmblocks
-
-
 ### media keys ###
 
 # play/pause
@@ -58,10 +43,6 @@ super + F4
 # alacritty
 super + Return
 	WINIT_X11_SCALE_FACTOR=1 alacritty
-
-# file manager
-super + e
-	thunar
 
 # firefox
 super + b

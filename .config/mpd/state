@@ -1,8 +1,9 @@
-sw_volume: 30
+sw_volume: 50
 audio_device_state:1:pulse audio
-state: stop
-current: 39
-random: 0
+state: pause
+current: 1
+time: 4.573000
+random: 1
 repeat: 0
 single: 0
 consume: 0
@@ -43,11 +44,4 @@ playlist_begin
 30:Twenty One Pilots - Vessel/Kitchen Sink.mp3
 31:Twenty One Pilots - Vessel/Lovely.mp3
 32:Twenty One Pilots - Vessel/Forest.mp3
-33:Junichi Masuda - Best Pokemon Music/Azalea Town.mp3
-34:Junichi Masuda - Best Pokemon Music/Bicycle.mp3
-35:Junichi Masuda - Best Pokemon Music/DP Opening.mp3
-36:Junichi Masuda - Best Pokemon Music/Eterna Forest.mp3
-37:Junichi Masuda - Best Pokemon Music/Lake Verity.mp3
-38:Junichi Masuda - Best Pokemon Music/Littleroot Town.mp3
-39:Junichi Masuda - Best Pokemon Music/Mt. Coronet.mp3
 playlist_end

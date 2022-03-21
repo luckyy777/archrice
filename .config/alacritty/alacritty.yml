@@ -15,7 +15,7 @@ font:
     family: Cascadia Code
     style: Bold Italic
 
-  size: 6
+  size: 10
 
 
 # Catppuccin!
@@ -56,7 +56,7 @@ colors:
     - { index: 16, color: '0xF8BD96' }
     - { index: 17, color: '0xF5E0DC' }
 
-#window:
-#  dimensions:
-#     columns: 80
-#     lines: 26
+window:
+  dimensions:
+      columns: 80
+      lines: 26
